@@ -1,0 +1,23 @@
+# conda env create -n rise -f environment.yml
+# conda env update --file environment.yml  --prune
+channels:
+  - conda-forge
+  - r
+dependencies:
+  - python
+  - r-irkernel
+  - r-hdinterval
+  - r-extradistr
+  - r-glmsdata
+  - r-mcmcpack
+  - r-invgamma
+  - r-readxl
+  - r-rcurl
+  - rise
+  - jupytext
+  - jsonschema-with-format-nongpl
+  - webcolors
+  - pip
+  - pip:
+    - jupyter-contrib-nbextensions
+    - hide_code
