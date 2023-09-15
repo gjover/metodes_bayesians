@@ -1,0 +1,145 @@
+---
+jupyter:
+  jupytext:
+    formats: ipynb,Rmd
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.7
+  kernelspec:
+    display_name: R
+    language: R
+    name: ir
+---
+
+<!-- #region id="ebe9c8d8" -->
+## [Introducció][colab]
+
+[<center><img src=https://upload.wikimedia.org/wikipedia/commons/1/18/Bayes%27_Theorem_MMB_01.jpg width=50%></center>](#img_Bayes)
+
+
+[colab]: https://colab.research.google.com/github/gjover/metodes_bayesians/blob/main/notebooks/Exercicis-1.ipynb
+<!-- #endregion -->
+
+<!-- #region id="a4ed2c48" -->
+### Exercici 1:
+
+El resultat de llançar una moneda equilibrada pot ser cara o creu, amb probabilitat p(cara)=1/2. Si la moneda està carregada p(cara)=3/4. Suposem que el 99% de les monedes són
+equilibrades. Quina és la probabilitat que una moneda determinada sigui equilibrada si en
+llançar-la 3 vegades s'obté 3 cares?
+<!-- #endregion -->
+
+<!-- #region id="66bb1c91" -->
+### Exercici 2:
+
+Aproximadament 1/125 de tots els naixements són bessons fraterns i 1/300 dels
+naixements són bessons idèntics. Elvis Presley tenia un germà bessó (que va morir en néixer).
+Quina és la probabilitat que Elvis fos un bessó idèntic? (Podeu aproximar la probabilitat de
+naixement d'un nen o una nena com a 1/2).
+<!-- #endregion -->
+
+<!-- #region id="1010c02a" -->
+### Exercici 3:
+
+A una escola hi ha tres grups A, B i C.
+Al grup A hi ha 16 nens i 10 nenes, al grup B 8 nens i 20 nenes i al grup C 13 nens i 14 nenes.
+
+Si ens trobem a una nena, quina probabilitat hi ha què sigui del grup B?
+<!-- #endregion -->
+
+<!-- #region id="8c81bdc0" -->
+### Exercici 4:
+
+Suposem que hi ha dues espècies d'os panda. Tots dos són igualment comuns a la natura i viuen als mateixos llocs. S'assemblen exactament i mengen el mateix menjar, i encara no hi ha cap assaig genètic capaç de diferenciar-los. Tanmateix, es diferencien en la mida de la seva família.
+
+- L'espècie A dona a llum bessons el 10% del temps, en cas contrari, dona a llum un sol nadó.
+- En l'espècie B neix bessons el 20% del temps, en cas contrari, neix un sol nadó.
+
+Suposem que aquests números es coneixen amb certesa, a partir de molts anys d'investigació de camp.
+<!-- #endregion -->
+
+<!-- #region id="c3274599" -->
+#### Exercici 4.1:
+
+Ara suposem que esteu gestionant un programa de cria de panda en captivitat. Teniu una nova femella panda d'espècie desconeguda.
+Calculeu la probabilitat que el panda que tenim sigui de l'espècie A, suposant que només hem observat el primer naixement i que es tracta de bessons.
+<!-- #endregion -->
+
+<!-- #region id="d88d862c" -->
+#### Exercici 4.2:
+Quina és la probabilitat que el seu proper naixement també siguin bessons?
+<!-- #endregion -->
+
+<!-- #region id="15483389" -->
+#### Exercici 4.3:
+
+Continuant amb el problema anterior, suposem que la mateixa mare panda té un
+segon part i que no es tracta de bessons, sinó d'un únic nadó. Calculeu la probabilitat posterior
+que aquest panda sigui l'espècie A.
+<!-- #endregion -->
+
+<!-- #region id="200da724" -->
+#### Exercici 4.4:
+
+Suposem ara que ve un veterinari que té una nova prova genètica que segons ell pot identificar l'espècie de la nostra mare panda. Però la prova, com totes les proves, és imperfecta. Aquesta és la informació que teniu sobre la prova:
+
+- Si el test és positiu es tracta de l'expècie A i si és negatiu és de l'espècie B.
+- La probabilitat que identifiqui correctament un panda de l'espècie A és de 0,8.
+- La probabilitat que identifiqui correctament un panda de l'espècie B és de 0,65.
+
+El veterinari li fa la prova a la vostra panda i us diu que la prova és positiva per a l'espècie A.
+Primer ignoreu la vostra informació anterior dels naixements i calculeu la probabilitat posterior que la vostra panda sigui de l'espècie A. A continuació, torneu a fer el vostre càlcul, ara utilitzant les dades del naixement també.
+
+<!-- #endregion -->
+
+<!-- #region id="217cb197" -->
+### Exercici 5:
+
+En un curs amb 120 alumes, 17 suspenen el primer parcial.
+
+De cara l'examen final:
+- Quin és l'interval de credibilitat de la proporció $\theta$ d'aprovar amb un priori no informatiu?
+- I amb un prior Beta amb $\alpha = 40$, $\beta = 1$?
+<!-- #endregion -->
+
+<!-- #region id="c6f28712" -->
+### Exercici 6:
+
+Suposem que teniu una distribució prèvia $\textrm{Beta}(4, 4)$  sobre la probabilitat $\theta$ que una moneda doni una "cara" quan es llença. La moneda es llença deu vegades de manera independent i les "cares" apareixen menys de 3 vegades.
+No us diuen quantes cares s'han vist, només que el nombre és inferior a 3. Calculeu la vostra densitat posterior exacta (fins a una constant de proporcionalitat) per a $\theta$ i dibuixeu-la.
+<!-- #endregion -->
+
+# Referències
+
+- <a id='img_Bayes'></a> https://commons.wikimedia.org/wiki/File:Bayes'_Theorem_MMB_01.jpg
+
+
+Copyright (C) 2022 Gabriel Jover Mañas
+
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".
+
+![GFDL][GFDL]
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+![GPL3][GPL3]
+
+[GFDL]: https://www.gnu.org/graphics/gfdl-logo-small.png 
+[GPL3]: https://www.gnu.org/graphics/gplv3-127x51.png
