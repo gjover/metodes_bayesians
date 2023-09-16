@@ -19,7 +19,7 @@ jupyter:
 [<center><img src=https://upload.wikimedia.org/wikipedia/commons/1/18/Bayes%27_Theorem_MMB_01.jpg width=50%></center>](#img_Bayes)
 
 
-[colab]: https://colab.research.google.com/github/gjover/metodes_bayesians/blob/main/notebooks/Exercicis-1.ipynb
+[colab]: https://colab.research.google.com/github/gjover/metodes_bayesians/blob/main/notebooks/1-Introduccio.ipynb
 <!-- #endregion -->
 
 <!-- #region id="a4ed2c48" -->
@@ -39,40 +39,31 @@ Quina és la probabilitat que Elvis fos un bessó idèntic? (Podeu aproximar la 
 naixement d'un nen o una nena com a 1/2).
 <!-- #endregion -->
 
-<!-- #region id="1010c02a" -->
-### Exercici 3:
-
-A una escola hi ha tres grups A, B i C.
-Al grup A hi ha 16 nens i 10 nenes, al grup B 8 nens i 20 nenes i al grup C 13 nens i 14 nenes.
-
-Si ens trobem a una nena, quina probabilitat hi ha què sigui del grup B?
-<!-- #endregion -->
-
 <!-- #region id="8c81bdc0" -->
-### Exercici 4:
+### Exercici 3:
 
 Suposem que hi ha dues espècies d'os panda. Tots dos són igualment comuns a la natura i viuen als mateixos llocs. S'assemblen exactament i mengen el mateix menjar, i encara no hi ha cap assaig genètic capaç de diferenciar-los. Tanmateix, es diferencien en la mida de la seva família.
 
-- L'espècie A dona a llum bessons el 10% del temps, en cas contrari, dona a llum un sol nadó.
-- En l'espècie B neix bessons el 20% del temps, en cas contrari, neix un sol nadó.
+- L'espècie A dona a llum bessons al 10% dels parts, en cas contrari, dona a llum un sol nadó.
+- En l'espècie B neixen bessons el 20% dels cops, en cas contrari, neix un sol nadó.
 
 Suposem que aquests números es coneixen amb certesa, a partir de molts anys d'investigació de camp.
 <!-- #endregion -->
 
 <!-- #region id="c3274599" -->
-#### Exercici 4.1:
+#### Exercici 3.1:
 
 Ara suposem que esteu gestionant un programa de cria de panda en captivitat. Teniu una nova femella panda d'espècie desconeguda.
 Calculeu la probabilitat que el panda que tenim sigui de l'espècie A, suposant que només hem observat el primer naixement i que es tracta de bessons.
 <!-- #endregion -->
 
 <!-- #region id="d88d862c" -->
-#### Exercici 4.2:
+#### Exercici 3.2:
 Quina és la probabilitat que el seu proper naixement també siguin bessons?
 <!-- #endregion -->
 
 <!-- #region id="15483389" -->
-#### Exercici 4.3:
+#### Exercici 3.3:
 
 Continuant amb el problema anterior, suposem que la mateixa mare panda té un
 segon part i que no es tracta de bessons, sinó d'un únic nadó. Calculeu la probabilitat posterior
@@ -80,38 +71,31 @@ que aquest panda sigui l'espècie A.
 <!-- #endregion -->
 
 <!-- #region id="200da724" -->
-#### Exercici 4.4:
+#### Exercici 3.4:
 
 Suposem ara que ve un veterinari que té una nova prova genètica que segons ell pot identificar l'espècie de la nostra mare panda. Però la prova, com totes les proves, és imperfecta. Aquesta és la informació que teniu sobre la prova:
 
-- Si el test és positiu es tracta de l'expècie A i si és negatiu és de l'espècie B.
+- Si el test és positiu es tracta de l'espècie A i si és negatiu és de l'espècie B.
 - La probabilitat que identifiqui correctament un panda de l'espècie A és de 0,8.
 - La probabilitat que identifiqui correctament un panda de l'espècie B és de 0,65.
 
 El veterinari li fa la prova a la vostra panda i us diu que la prova és positiva per a l'espècie A.
-Primer ignoreu la vostra informació anterior dels naixements i calculeu la probabilitat posterior que la vostra panda sigui de l'espècie A. A continuació, torneu a fer el vostre càlcul, ara utilitzant les dades del naixement també.
+Primer ignoreu la informació anterior dels naixements i calculeu la probabilitat posterior que la vostra panda sigui de l'espècie A. A continuació, torneu a fer el vostre càlcul, ara utilitzant les dades del naixement també.
 
 <!-- #endregion -->
 
-<!-- #region id="217cb197" -->
-### Exercici 5:
+<!-- #region id="1010c02a" -->
+### Exercici 4:
 
-En un curs amb 120 alumes, 17 suspenen el primer parcial.
+A una escola hi ha tres grups A, B i C.
+Al grup A hi ha 16 nens i 10 nenes, al grup B 8 nens i 20 nenes i al grup C 13 nens i 14 nenes.
 
-De cara l'examen final:
-- Quin és l'interval de credibilitat de la proporció $\theta$ d'aprovar amb un priori no informatiu?
-- I amb un prior Beta amb $\alpha = 40$, $\beta = 1$?
+Si ens trobem a una nena, quina probabilitat hi ha què sigui del grup B?
 <!-- #endregion -->
 
-<!-- #region id="c6f28712" -->
-### Exercici 6:
+## Referències
 
-Suposem que teniu una distribució prèvia $\textrm{Beta}(4, 4)$  sobre la probabilitat $\theta$ que una moneda doni una "cara" quan es llença. La moneda es llença deu vegades de manera independent i les "cares" apareixen menys de 3 vegades.
-No us diuen quantes cares s'han vist, només que el nombre és inferior a 3. Calculeu la vostra densitat posterior exacta (fins a una constant de proporcionalitat) per a $\theta$ i dibuixeu-la.
-<!-- #endregion -->
-
-# Referències
-
+- David Agis,**2022**. *Problemes de Mètodes Bayesians 2022-2023*
 - <a id='img_Bayes'></a> https://commons.wikimedia.org/wiki/File:Bayes'_Theorem_MMB_01.jpg
 
 
