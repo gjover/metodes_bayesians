@@ -41,26 +41,29 @@ No us diuen quantes cares s'han vist, només que el nombre és inferior a 3.
 
 ### Exercici 3:
 
-Es fa un estudi de la probabilitat $\theta$ de què una dona entre 60 i 69 anys doni positiu en càncer so té un historial familar amb casos de càncer. A l'estudi participen 300 dones amb aquestes característiques, de les quals 14 donen positiu.
+Continuant amb l'exercici anterior, analitzarem el cas general.
 
-- Calcula el likelihood $\mathcal{L}(X|\theta)$
+Sigui $\gamma$ la quantitat de cares que obtenim quan tirem una moneda a l'aire $n$ vegades, amb una probabilitat $\theta$ de què surti cara.
 
-Segons un expert, la seuva experiència en el cap indica que aquesta probabilitat és menor del %5.
+- Suposant un prior $U(\theta; 0, 1)$, calcula la distribució prior predictiva per $P(\gamma_{\text{new}}=k)$ , $k=0, ... ,n$
 
-- Fes servir un prior uniforme de 0 a 5% per calcular la densitat posteriori.
-- Calcula el valor estimat i l'interval de credibilitat centrar del $95%$ per a $\theta$. 
+- Suposant un prior $\textrm{Beta}(\theta; \alpha, \beta)$, mostra algebraicament que el valor esperat de $\theta$ sempre es trobarà entre la mitjana del prior i la freqüència relativa observada.
+
+- Mostra que per a una distribució prior de $\theta$ uniforme, la variància de $\theta$ sempre és menor que la variància del prior.
+
+- Dona un exemple de distribució prior $\textrm{Beta}(\theta; \alpha, \beta)$ i dades $\gamma, n$ on la variància del posterior de $\theta$ sigui major que la variància del prior.
 
 
 ### Exercici 4:
 
-Continuant amb l'exercici anterior, analitzarem el cas general.
-Tirem una moneda a l'aire $y$ vegades, amb una probabilitat $\theta$ de què surtai cara.
+Es fa un estudi de la probabilitat $\theta$ de què una dona entre 60 i 69 anys doni positiu en càncer so té un historial familiar amb casos de càncer. A l'estudi participen 300 dones amb aquestes característiques, de les quals 14 donen positiu.
 
-- Suposant un prior $\textrm{Beta}(\theta; \alpha, \beta)$, mostra algebraicament que $\theta$ sempre es trobarà entre la mitjana del prior i la freqüència relativa observada.
+- Calcula el likelihood $\mathcal{L}(X|\theta)$
 
-- Mostra que per a una distribució de $\theta$ uniforme, la variància de $\theta$ sempre és menor que la variància del prior.
+Segons un expert, la seva experiència en el cap indica que aquesta probabilitat és menor del %5.
 
-- Dona un exemple de distribució prior $\textrm{Beta}(\theta; \alpha, \beta)$ i dades y/n on la variància del posterior de $\theta$ sigai major que la variància del prior.
+- Fes servir un prior uniforme de 0 a 5% per calcular la densitat posteriori.
+- Calcula el valor estimat i l'interval de credibilitat centrat del $95\%$ per a $\theta$. 
 
 
 ### Exercici 5:
