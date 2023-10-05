@@ -47,9 +47,12 @@ Sigui $\gamma$ la quantitat de cares que obtenim quan tirem una moneda a l'aire 
 
 - Suposant un prior $U(\theta; 0, 1)$, calcula la distribució prior predictiva per $P(\gamma_{\text{new}}=k)$ , $k=0, ... ,n$
 
+
 - Suposant un prior $\textrm{Beta}(\theta; \alpha, \beta)$, mostra algebraicament que el valor esperat de $\theta$ sempre es trobarà entre la mitjana del prior i la freqüència relativa observada.
 
+
 - Mostra que per a una distribució prior de $\theta$ uniforme, la variància de $\theta$ sempre és menor que la variància del prior.
+
 
 - Dona un exemple de distribució prior $\textrm{Beta}(\theta; \alpha, \beta)$ i dades $\gamma, n$ on la variància del posterior de $\theta$ sigui major que la variància del prior.
 
@@ -60,9 +63,12 @@ Es fa un estudi de la probabilitat $\theta$ de què una dona entre 60 i 69 anys 
 
 - Calcula el likelihood $\mathcal{L}(X|\theta)$
 
+
 Segons un expert, la seva experiència en el cap indica que aquesta probabilitat és menor del %5.
 
 - Fes servir un prior uniforme de 0 a 5% per calcular la densitat posteriori.
+
+
 - Calcula el valor estimat i l'interval de credibilitat centrat del $95\%$ per a $\theta$. 
 
 
@@ -71,18 +77,54 @@ Segons un expert, la seva experiència en el cap indica que aquesta probabilitat
 A un laboratori estem estudiant la vida mitjana d'un cultiu de bacteris quan s'exposen a un producte. El temps de vida dels bacteris segueix una densitat de probabilitat $f(t; \mu) = 1/\mu \ e^{-t/\mu}$, on $t$ és el temps en hores.
 
 - Calcula la distribució prior predictiva fent servir una densitat Gamma Inversa per a $\mu$ amb una mitjana i desviació estàndard de 4.5 i 0.5 respectivament.
-- Representa gràficament la densitat predictiva, i calcula el seu valor esperat i variància. 
-- Fent servir un prior uniforme entre \[3.6, 5.3\] per al paràmetre $\mu$, simula valors de la distribució prior predictiva i calcula el seu valor esperat i variància. Compara els resultats amb els de l'apartat anterior.
+
+
+- Representa gràficament la densitat predictiva, i calcula el seu valor esperat i variància.
+
+
+ - Fent servir un prior uniforme entre \[3.6, 5.3\] per al paràmetre $\mu$, simula valors de la distribució prior predictiva i calcula el seu valor esperat i variància. Compara els resultats amb els de l'apartat anterior.
+
 
 Fent servir les mesures del temps de vida t de 8 cultius:
-
-- Calcula la distribució posterior predictiva fent servir el prior Gamma Inversa de l'exercici anterior.
-- Representa gràficament la densitat predictiva, i calcula el seu valor esperat i variància. 
-- Simula valors de la distribució posterior predictiva i calcula el seu valor esperat i variància, fent servir un prior uniforme com a l'exercici anterior. Compara els resultats amb els obtinguts amb la distribució prior predictiva.
 
 ```{r}
 t = c(2.56, 0.42, 3.72, 0.64, 10.7, 1.57, 9.62, 2.54)
 ```
+
+- Calcula la distribució posterior predictiva fent servir el prior Gamma Inversa de l'exercici anterior.
+
+
+- Representa gràficament la densitat predictiva, i calcula el seu valor esperat i variància.
+
+
+- Simula valors de la distribució posterior predictiva i calcula el seu valor esperat i variància, fent servir un prior uniforme com a l'exercici anterior. Compara els resultats amb els obtinguts amb la distribució prior predictiva.
+
+
+### Exercici 6:
+
+Volem calibrar una balança de precisió fent una sèrie de mesures amb un objecte calibrat.
+
+Fes la inferència Bayesiana de $\sigma^2$ fent servir la mesura dels pesos:
+
+```{r}
+w = c(2.64, 2.67, 2.65, 2.67, 2.65) # g
+```
+
+- Assumeix que la massa de l'objecte calibrat és $\mu =  2.6g$ i calcula la seva precisió $\sigma^2$ fent servir un prior $\pi(\sigma^2) \propto  1/\sigma^4$.
+
+
+- Calcula l'estimació puntual i l'interval per una credibilitat del $95\%$
+
+
+### Exercici 7:
+
+- Demostra que el prior de Jeffreys per la distribució de Poisson és:
+
+$$\pi_J (\lambda) \propto \frac{1}{\sqrt{\lambda}}$$
+
+
+- Calcula el prior de Jeffreys per a una distribució normal amb $\sigma^2$ coneguda.
+
 
 ## Referències
 
@@ -90,7 +132,7 @@ t = c(2.56, 0.42, 3.72, 0.64, 10.7, 1.57, 9.62, 2.54)
 - David Agis & Dorota M lynarczyk,**2022**. *Problemes de Mètodes Bayesians 2022-2023*
 - <a id='img_Bayes'></a> https://commons.wikimedia.org/wiki/File:Microscopic_view_of_germ_theory.jpg
 
-
+<!-- #region cell_style="center" -->
 Copyright (C) 2022 Gabriel Jover Mañas
 
     Permission is granted to copy, distribute and/or modify this document
@@ -119,3 +161,4 @@ Copyright (C) 2022 Gabriel Jover Mañas
 
 [GFDL]: https://www.gnu.org/graphics/gfdl-logo-small.png 
 [GPL3]: https://www.gnu.org/graphics/gplv3-127x51.png
+<!-- #endregion -->
