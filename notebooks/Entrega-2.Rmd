@@ -1,0 +1,102 @@
+---
+jupyter:
+  jupytext:
+    formats: ipynb,Rmd
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.7
+  kernelspec:
+    display_name: R
+    language: R
+    name: ir
+---
+
+<!-- #region -->
+## [Entrega 2][colab]
+
+[<center><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/En_honor_a_los_muertos_2.jpg/640px-En_honor_a_los_muertos_2.jpg width=50%></center>](#img_Tomba)
+
+
+[colab]: https://colab.research.google.com/github/gjover/metodes_bayesians/blob/main/notebooks/Entrega-2.ipynb
+<!-- #endregion -->
+
+
+
+<!-- #region -->
+### Defuncions a Catalunya:
+
+Per estudiar la taxa de defuncions a Catalunya suposem que el nombre de defuncions de cada any són independents i segueixen una distribució de Poisson($\lambda$).
+
+Baixa els Indicadors de mortalitat de l'Institut d’Estadística de Catalunya.
+
+https://www.idescat.cat/indicadors/?id=aec&n=15269
+
+
+Per fer l'anàlisi selecciona les defuncions totals entre 1999 i 2019.
+<!-- #endregion -->
+
+- Obté una distribució prior no informatiu tipus Jeffreys per a aquest model i calcula la distribució posterior de $\lambda$ amb aquesta prior.
+
+
+- Calcular el valor esperat de $\lambda$ i l’interval de credibilitat centrat del 95% de λ.
+
+
+- Calcula i representa la distribució posterior predictiva i estimar la probabilitat de què el nombre de naixements l’any vinent sigui $k_\text{new} = 60.000$
+
+(recorda com era la distribució binomial negativa)
+
+
+- Calcula el factor de Bayes per la hipòtesi que hi haurà 60.000 o més defuncions contra la hipòtesi que n'hi hauran menys.
+
+Fes servir el prior de Jeffreys i l'assumpció $P(H_0) = P(H_1) = 0.5$.
+
+
+### Observacions: 
+
+Recordeu argumentar adequadament els càlculs i els resultats.
+
+Afegiu al final un comentari crític dels resultats obtinguts.
+
+Les entregues es faran per parelles, canviat de parella a cada entrega.
+
+El treball es presentarà en format PDF i haurà d'incloure una anàlisi de la tasca a realitzar, una resolució argumentada dels exercicis i una anàlisi crítica dels resultats.
+
+L'entrega es farà al campus virtual abans de l' 1 de Novembre.
+
+
+## Referències
+
+- <a id='img_Infant'></a> https://commons.wikimedia.org/wiki/File:En_honor_a_los_muertos_2.jpg
+
+<!-- #region cell_style="center" -->
+Copyright (C) 2022 Gabriel Jover Mañas
+
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".
+
+![GFDL][GFDL]
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+![GPL3][GPL3]
+
+[GFDL]: https://www.gnu.org/graphics/gfdl-logo-small.png 
+[GPL3]: https://www.gnu.org/graphics/gplv3-127x51.png
+<!-- #endregion -->
