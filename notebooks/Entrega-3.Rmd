@@ -1,0 +1,125 @@
+---
+jupyter:
+  jupytext:
+    formats: ipynb,Rmd
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.15.2
+  kernelspec:
+    display_name: R
+    language: R
+    name: ir
+---
+
+<!-- #region id="915d2efc" -->
+## [Entrega 3][colab]
+
+[<center><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Speed_Dreams_car_with_headlamps_on_and_glowing_brake_disk.jpg/640px-Speed_Dreams_car_with_headlamps_on_and_glowing_brake_disk.jpg width=50%></center>](#img_Car)
+
+
+[colab]: https://colab.research.google.com/github/gjover/metodes_bayesians/blob/main/notebooks/Entrega-3.ipynb
+<!-- #endregion -->
+<!-- #region id="ec89d956" -->
+### Distància de frenat
+
+Per provar un nou compost pels neumàtics es fan unes proves de frenat a diferents velocitats i es mesura la distància de frenat.
+
+Volem obtenir les distribucions posterior dels paràmetres del model:
+
+\begin{align}
+y &=  a + b x_i + c x_i^2 + \epsilon_i \\
+\end{align}
+
+on les variables del dataset són velocitat (speed = x) i distància de frenat (distance = y).
+
+De proves amb neumàtics similars tenim els següents paràmetres: $a = 4.2 \pm 1.0\quad b = 0.02 \pm 0.03 \quad c = 0.012 \pm 0.005$
+
+Assumint que $\epsilon$ segueix una distribució normal $\mathcal{N}(0, \sigma)$ amb una prior $p(\sigma) = \text{Gamma}(10, 1)$.
+<!-- #endregion -->
+
+<!-- #region id="ec89d956" -->
+- Obté analíticament la versemblança i els scores, i calcula el MLE.
+<!-- #endregion -->
+
+- Troba les distribucions posterior d' a, b, c i $\sigma$ fent servir l'algoritme AR
+
+<!-- #region id="ec89d956" -->
+- Troba les distribucions posterior d' a, b, c i $\sigma$ fent servir l'algoritme Metropolis–Hastings. Fes i interpreta els gràfics de diagnòstic.
+<!-- #endregion -->
+
+<!-- #region id="ec89d956" -->
+- Compara l'autocorrelació de les sèries de dades generades amb els dos mètodes per cada un dels quatre paràmetres.
+<!-- #endregion -->
+
+<!-- #region id="ec89d956" -->
+- Troba les distribucions posterior d' a, b, c i $\sigma$ amb priors no informatives. 
+<!-- #endregion -->
+
+<!-- #region id="ec89d956" -->
+- Compara els resultats obtinguts amb dels dos tipus de priors i comprova com ajusten la corba a les dades.
+<!-- #endregion -->
+
+- Per a un cotxe que va a una velocitat de 100 km/h, representeu gràficament la densitat de la distribució de la seva distància de frenada. Calculeu també el valor esperat i un 95% CI. 
+
+<!-- #region id="ec89d956" -->
+- Representa gràficament la corba i les bandes de credibilitat del 95%.
+(optatiu)
+<!-- #endregion -->
+
+```{r}
+library(MCMCpack)
+library(ggplot2)
+```
+
+<!-- #region id="7a4aebc5" -->
+### Observacions:
+
+Recordeu argumentar adequadament els càlculs i els resultats.
+
+Afegiu al final un comentari crític dels resultats obtinguts.
+
+Les entregues es faran per parelles, canviat de parella a cada entrega. Els treballs individuals no s'avaluaran.
+
+El treball es presentarà en format PDF i haurà d'incloure una anàlisi de la tasca a realitzar, una resolució argumentada dels exercicis i una anàlisi crítica dels resultats.
+
+L'entrega es farà al campus virtual abans del 13 de Desembre.
+<!-- #endregion -->
+
+<!-- #region id="cdf82dfa" -->
+## Referències
+
+- <a id='img_Car'></a> https://commons.wikimedia.org/wiki/File:Speed_Dreams_car_with_headlamps_on_and_glowing_brake_disk.jpg?uselang=es
+<!-- #endregion -->
+
+<!-- #region cell_style="center" id="04593902" -->
+Copyright (C) 2022 Gabriel Jover Mañas
+
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in the section entitled "GNU
+    Free Documentation License".
+
+![GFDL][GFDL]
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+![GPL3][GPL3]
+
+[GFDL]: https://www.gnu.org/graphics/gfdl-logo-small.png
+[GPL3]: https://www.gnu.org/graphics/gplv3-127x51.png
+<!-- #endregion -->
