@@ -6,7 +6,7 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.2'
-      jupytext_version: 1.14.7
+      jupytext_version: 1.16.0
   kernelspec:
     display_name: R
     language: R
@@ -43,9 +43,12 @@ Per fer l'anàlisi selecciona les defuncions totals entre 1999 i 2019.
 - Calcular el valor esperat de $\lambda$ i l’interval de credibilitat centrat del 95% de λ.
 
 
-- Calcula i representa la distribució posterior predictiva i estimar la probabilitat de què el nombre de naixements l’any vinent sigui $k_\text{new} = 60.000$
+- Calcula i representa la distribució posterior predictiva.
 
 (recorda com era la distribució binomial negativa)
+
+
+- Estima la probabilitat de què el nombre de defuncions l’any vinent sigui $k_\text{new} = 60.000$ i de què el nombre de defuncions sigui $60.000 < k_\text{new} < 61.000$.
 
 
 - Calcula el factor de Bayes per la hipòtesi que hi haurà 60.000 o més defuncions contra la hipòtesi que n'hi hauran menys.
