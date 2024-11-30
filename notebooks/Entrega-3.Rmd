@@ -6,7 +6,7 @@ jupyter:
       extension: .Rmd
       format_name: rmarkdown
       format_version: '1.2'
-      jupytext_version: 1.15.2
+      jupytext_version: 1.16.0
   kernelspec:
     display_name: R
     language: R
@@ -83,8 +83,6 @@ Afegiu al final un comentari crític dels resultats obtinguts.
 Les entregues es faran per parelles, canviat de parella a cada entrega. Els treballs individuals no s'avaluaran.
 
 El treball es presentarà en format PDF i haurà d'incloure una anàlisi de la tasca a realitzar, una resolució argumentada dels exercicis i una anàlisi crítica dels resultats.
-
-L'entrega es farà al campus virtual abans del 13 de Desembre.
 <!-- #endregion -->
 
 <!-- #region id="cdf82dfa" -->
